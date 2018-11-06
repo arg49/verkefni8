@@ -87,7 +87,8 @@ const text = (() => {
   // fall sem sér um að bæta við nýju item
   function add(value) {
     const texti = document.querySelector('.form__input').value;
-    return texti;
+    const nospc = texti.trim();
+    return nospc;
   }
 
   // event handler til að eyða færslu
